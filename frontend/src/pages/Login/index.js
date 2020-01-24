@@ -20,18 +20,18 @@ export default function Login({history}){
     return (
         <> 
             <p>
-            Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
+                Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
             </p>
             <form onSubmit={handleSubmit}>
-            <label htmlFor="email">E-mail *</label>
-            <input 
-                type="email" 
-                id="email" 
-                placeholder="Seu melhor e-mail" 
-                value={email} 
-                onChange={event => setEmail(event.target.value)} 
-            />
-            <button className="btn" type="submit">Entrar</button>
+                <label htmlFor="email">E-mail *</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Seu melhor e-mail" 
+                    value={email} 
+                    onChange={event => setEmail(event.target.value)} 
+                />
+                <button className="btn" type="submit">Entrar</button>
             </form>          
         </>
     );
